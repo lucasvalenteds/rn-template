@@ -1,15 +1,13 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
+import Native from 'react-native';
 
-const App: React.FC = (): React.ReactElement => {
+export const App: React.FC = (): React.ReactElement => {
   return (
     <>
-      <StatusBar />
-      <SafeAreaView>
-        <ScrollView></ScrollView>
-      </SafeAreaView>
+      <Native.StatusBar />
+      <Native.SafeAreaView>
+        <Native.ScrollView></Native.ScrollView>
+      </Native.SafeAreaView>
     </>
   );
 };
-
-export default App;
